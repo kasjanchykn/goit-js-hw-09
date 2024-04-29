@@ -6,3 +6,29 @@
 */
 @import url('./reset.css');
 @import url('./root.css');
+
+body {
+  background-color: #fff;
+}
+.gallery {
+  max-width: 1128px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.gallery-item {
+  width: calc((100% - 48px) / 3);
+}
+
+.gallery-item :hover {
+  transform: scale(1.04);
+}
+
+.gallery-image {
+  width: 360px;
+  height: 200px;
+}
