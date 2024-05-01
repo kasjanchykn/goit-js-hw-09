@@ -23,7 +23,7 @@ if (savedLocalFormData) {
 
 form.addEventListener('submit', event => {
   event.preventDefault();
-  const { email, message } = savedLocalFormData || formData;
+  const { email, message } = formData;
   if (email === '' || message === '') {
     alert('Fill please all fields');
     return;
